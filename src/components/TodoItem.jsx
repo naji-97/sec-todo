@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styles from '../styles/TodoItem.module.css';
+import styles from '../styles/TodoItem.module.css';
 
 function TodoItem({
   itemProp, handleChange, deleTodo,
