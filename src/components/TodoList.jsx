@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import TodoItem from './TodoItem';
 
 function TodoList({
-  todosProps, setTodos, handleChange, deleTodo,
+  todosProps, setTodos, handleChange, deleTodo, updateItem,
 }) {
   return (
     <div>
@@ -15,6 +15,7 @@ function TodoList({
             setTodos={setTodos}
             handleChange={handleChange}
             deleTodo={deleTodo}
+            updateItem={updateItem}
           />
         ))}
       </ul>
@@ -33,6 +34,7 @@ TodoList.propTypes = {
   setTodos: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
   deleTodo: PropTypes.func.isRequired,
+  updateItem: PropTypes.func.isRequired,
 };
 
 export default TodoList;
